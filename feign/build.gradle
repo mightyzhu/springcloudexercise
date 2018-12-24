@@ -32,6 +32,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version: '1.4.6.RELEASE'
     compile 'org.springframework.boot:spring-boot-starter-web:2.1.0.RELEASE'
+    compile project(':helloserviceapi')
 }
 
 dependencyManagement {

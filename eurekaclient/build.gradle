@@ -35,6 +35,7 @@ dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.0.2.RELEASE'
     compile 'org.springframework.boot:spring-boot-starter-actuator:2.1.1.RELEASE'
     compile 'org.springframework.boot:spring-boot-starter-web:2.1.1.RELEASE'
+    compile project(':helloserviceapi')
 
 }
 

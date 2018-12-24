@@ -1,0 +1,31 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.mighty'
+version = '0.0.1-SNAPSHOT'
+
+description = """eurekacustomer"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+ext {
+    springCloudVersion = 'Greenwich.M1'
+}
+
+repositories {
+        
+     maven { url "https://repo.spring.io/milestone" }
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version:'2.1.0.M1'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'2.1.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version:'1.4.6.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version:'2.1.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-hystrix-dashboard', version:'2.1.0.M1'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'2.1.0.RELEASE'
+}
