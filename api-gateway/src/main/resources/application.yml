@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 8899
+zuul:
+  routes:
+    users:
+      path: /b/**
+      url: http://www.ityouknow.com/
+    api-a:
+      path: /a/**
+      serviceId: hello-service
+    api-b:
+      path: /api-b/**
+      serviceId: feign-consumer
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
