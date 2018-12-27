@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mightyzhu/springcloudexercise/config-repo
+          search-paths: config-repo
+          username: mighty_zhu@hotmail.com
+          password: zwb1988520
