@@ -5,7 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/mightyzhu/springcloudexercise/config-repo
+          uri: https://github.com/mightyzhu/springcloudexercise/
           search-paths: config-repo
           username: mighty_zhu@hotmail.com
           password: zwb1988520
+server:
+  port: 8070
