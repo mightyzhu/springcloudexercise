@@ -11,3 +11,8 @@ spring:
           password: zwb1988520
 server:
   port: 8070
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+

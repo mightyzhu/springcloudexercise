@@ -1,0 +1,20 @@
+server:
+  port: 8012
+spring:
+  application:
+    name: spring-cloud-config-client
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: mighty
+    password: 123456
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
